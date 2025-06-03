@@ -1,0 +1,413 @@
+/* .acomodo {
+      display: grid;
+      grid-gap: 2rem; /-----Aumenta el margen de las cuadriculas de grid-----/
+      grid-template-columns: 1fr 1fr 2fr; /-----reparte los elementos en el espacio disponible por fracciones-----/
+      background-color: rgb(231, 231, 231);
+    }
+
+.acomodo>h2{
+color: rgb(44, 0, 167);
+background-color: aqua;
+width: fit-content;
+}
+.acomodo>h1{
+background-color: rgb(86, 255, 40);
+height: max-content;
+}
+.acomodo>h3{
+background-color: rgb(255, 187, 0);
+padding: 5rem;
+margin: 2rem 4rem;
+
+}
+
+*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .modal-dialog-centered {
+    transform: translate(0, -50%);
+    top: 40%;
+    margin: 0 auto;
+  }
+
+  .img-centro {
+    margin: 10px auto 10px;
+    display: block;
+  }
+
+  /* Set a style for all buttons */
+  .login,.cancelbtn {
+    background-color: #4CAFAE;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .cancelbtn {
+    background-color: #f44336;
+  }
+
+  /* Extra styles for the cancel button  */
+  .guardar_edit {
+    color: white;
+    background-color: #24D2D2;
+  }
+
+  .cancel_edit {
+    color: white;
+    background-color: #f44336;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  .salto-linea {
+    margin-bottom: 155px;
+  }
+
+.botones{
+    width: 60%;
+  } 
+  
+  /*------------------------SEPARACION--------------------------*/
+  .gridbox{
+    display: grid; /*Proporciona  una cuadricula de una sola columna*/
+    grid-gap: 1.5rem; /*Aumenta el margen de las cuadriculas de grid */
+    grid-template-columns: repeat(8, minmax(205px, 1fr)); /*Define el numero de columnas que tendra la rejilla, asi como los tamaños asignados a cada una*/
+    font-family: inherit;
+    justify-content: center;
+    
+    /* Centrar horizontalmente */
+    /*align-items: center; /* Centrar verticalmente */
+    /* overflow: auto; Permite regular la visiblidad de los contenidos que sobresalen de una caja html */
+  }
+
+  .gridbox>div {
+    height: inherit;
+    
+  }
+  
+  .gridbox>div:nth-child(1){   /* Esto es la creacion de estilos para hacer que solo en algunos casos de estilos a un solo elemento dentro del mismo conjunto */
+    grid-row: 1; /*No. de fila donde va el elemento*/
+    grid-column: 2 / 4; /*No. de columnas de vale el elemento, Ej. 2 columnas de tamaño*/
+    background-color: rgba(0, 89, 255, 0.63); /*Color del fondo de los recuadros*/
+    text-align: center; /*Centrar el contenido del texto dentro del elemento*/ 
+    border: solid black 2px; /*Grosotr del borde de los recuadros y color*/
+    border-radius: 5px;  /* border-radius: 25% 25% 25% 25%; -------------- Borde del redondeo de la tabla*/
+    /*margin-bottom: 5rem;  Establece el espacio requerido en la parte inferior de un elemento*/
+    display: block; /*Asegura que cada elemento se muestre en un renglon diferente*/ 
+    /*white-space: pre; /* Preserva los espacios y saltos de línea */ 
+              /*↑↑←←← EN VEZ DE ESTO */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(1)>span>p{
+    /**1 Rem = 16px **/
+    margin-left: 0.4rem; /* Se utiliza para establecer el margen izquierdo de un elemento  */
+  }     
+  
+  h4{ 
+    opacity: 1; /*DESDE GOOGLE, CAMBIA EL VALOR A 0*/
+    transition: all 2s ease-in-out; /* Se utiliza para crear efectos de transicion suaves entre diferentes estados de un elemento  */
+  }
+  
+  .gridbox>div:nth-child(2){
+    grid-row: 1; 
+    grid-column: 4 / 6;
+    background-color: rgba(46, 138, 34, 0.541);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(3){
+    grid-row: 1; 
+    grid-column: 6 / 8;
+    background-color: rgba(93, 71, 255, 0.459);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(4){
+    grid-row: 2; 
+    grid-column: 3 / 5;
+    background-color: rgba(88, 255, 233, 0.685);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(5){
+    grid-row: 2; 
+    grid-column: 5 / 7;
+    background-color: rgba(102, 255, 102, 0.692);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(6){
+    grid-row: 3; 
+    grid-column: 1 / 3;
+    background-color: rgba(63, 62, 62, 0.493);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .gridbox>div:nth-child(7){
+    grid-row: 3; 
+    grid-column: 3 / 5;
+    background-color: rgba(63, 62, 62, 0.493);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .gridbox>div:nth-child(8){
+    grid-row: 3; 
+    grid-column: 5 / 7;
+    background-color: rgba(63, 62, 62, 0.493);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(9){
+    grid-row: 3; 
+    grid-column: 7 / 9;
+    background-color: rgba(173, 76, 152, 0.541);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(10){
+    grid-row: 4; 
+    grid-column: 2 / 4;
+    background-color: rgba(121, 121, 121, 0.541);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-bottom: 12.5rem; 
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(11){
+    grid-row: 4; 
+    grid-column: 4 / 6;
+    background-color: rgba(255, 71, 71, 0.541);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-bottom: 12.5rem; 
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .gridbox>div:nth-child(12){
+    grid-row: 4; 
+    grid-column: 6 / 8;
+    background-color: rgba(252, 255, 66, 0.685);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  /*------------------------SEPARACION--------------------------*/
+  .flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    font-family: inherit;
+  }
+  
+  .flexbox>span{
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .titulo{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+  }
+  
+  .contenido{
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  margin-left: 0.4rem;
+  }
+  
+  /*------------------------SEPARACION--------------------------*/
+  .flexbox>span:nth-child(1)>h4{  /* Esto es la creacion de estilos para hacer que solo en algunos casos de estilos a un solo elemento dentro del mismo conjunto */
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+  }
+  
+  .p{
+    font-size: 1rem;
+  }
+  
+  .editor{
+    position: absolute;
+    left: 25vw;
+    margin: 1rem;
+    /* border: 2px solid #cdcdcd6b; */
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  /*------------------------SEPARACION--------------------------*/
+  @font-face {
+    font-family: 'Mate';
+    src: url('Fuentes/Mate.ttf') format('truetype');
+  } 
+  
+
+  .gridbox.showTable>div{
+    animation: esconder forwards .6s;
+    
+    
+  }
+
+  @keyframes esconder { 
+    0% {
+      height: inherit;
+      opacity: 1;
+    }
+    30% {
+          height: 10rem;
+          opacity: 0.50;
+
+        }
+    60% {
+      height: 7rem;
+      opacity: 0.25;
+    }
+    90% {
+      height: 4rem;
+      opacity: 0; 
+    }
+    100% {
+      opacity: 0;
+      height: 0rem;
+      align-content: end;
+      visibility: hidden;
+    }
+  }
+
+  /*------------------------ AJUSTE RESPONSIVE PARA DISPOSITIVOS MOVILES --------------------------*/
+
+  @media (max-width: 1000px) {
+
+    .gridbox{
+      display: contents;
+      margin-top: 1000px;
+    }
+
+    .editor{
+      margin: -3rem;
+    }
+
+  }
+
+  /*
+  .azul{
+    background-color: rgb(255, 142, 127);
+    transition: all 1s ease-in-out;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .resaltado {
+    background-color: yellow;
+    font-weight: bold;
+    width: 20rem;
+    height: 20rem;
+    opacity: 1;
+    position: relative;
+  }
+  */
+  
+  /*------------------------SEPARACION--------------------------*/
+  /*.btn{
+    width: 200px;
+    height: 50px;
+  }*/

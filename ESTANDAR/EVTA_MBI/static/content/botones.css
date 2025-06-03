@@ -1,0 +1,36 @@
+.btn-rojo{background-color:#FF0000;color: #FFF;}
+.btn-rojo:hover{background-color:#ff5f5f; color: #FFF;}
+
+.btn-azul{background-color:#3e3ef5;color: #FFF;}
+.btn-azul:hover{background-color:#6161fa;color: #FFF;}
+
+.btn-verde{background-color:#008000;color: #FFF;}
+.btn-verde:hover{background-color:#02b302;color: #FFF;}
+
+.btn-natural{background-color:#FFFFFF;color: #000;}
+.btn-natural:hover{background-color:#a3a3a3;color: #FFF;}
+
+
+.btn-cafe{background-color:#8B4513;color: #FFF;}
+.btn-cafe:hover{background-color:#a76e04;color: #FFF;}
+
+.btn-beige{background-color:#FFD700;color: #FFF;}
+.btn-beige:hover{background-color:#dacd24;color: #FFF;}
+
+.btn-amarillo{background-color:#FFFF00;color: #000;}
+.btn-amarillo:hover{background-color:#f8f874;color: #FFF;}
+
+.btn-naranja{background-color:#FFA500;color: #FFF;}
+.btn-naranja:hover{background-color:#ffd900;color: #FFF;}
+
+.btn-relx{background-color:#FF00FF;color: #FFF;}
+.btn-relx:hover{background-color:#f864ba;color: #FFF;}
+
+.btn-rosa{background-color:#fc0585;color: #FFF;}
+.btn-rosa:hover{background-color:#ff54ac;color: #FFF;}
+
+.btn-relt{background-color:#A9A9A9;color: #FFF;}
+.btn-relt:hover{background-color:#d6d6d6;color: #FFF;}
+
+.btn-cyan{background-color:#4CAFAE;color: #FFF;}
+.btn-cyan:hover{background-color:#61dad7;color: #FFF;}
