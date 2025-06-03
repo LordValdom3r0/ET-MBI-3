@@ -1,0 +1,18 @@
+#se habilita la opción de cambio de QR para la caja MFB-P1 con QR DE MFB-S2
+#el valor de TRUE se toma como string y se hace mayúsculas automáticamente
+####################################
+MFB_S2_ENABLE:TRUE
+####################################
+
+
+#se asigna el valor del nuevo QR que se pedirá escanear para la caja MFB-S2
+####################################
+QR_VALOR:WACKSQRTEST
+####################################
+
+
+#se hace una lista de los eventos a los que aplicará este cambio 
+#(los eventos que contengan cualquier string de la lista separada por ",")
+####################################
+eventos:mopf
+####################################
