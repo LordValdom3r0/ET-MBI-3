@@ -1,0 +1,128 @@
+++++ Códigos QR para cajas ++++
+***Topico***:
+gui/status
+***Mensajes***:
+PDC-R:
+{"qr_box":"12239061602"}
+PDC-RMID:
+{"qr_box":"12239061502"}
+PDC-RS:
+{"qr_box":"12239061402"}
+PDC-D
+{"qr_box":"12239060402"}
+PDC-P
+{"qr_box":"12239060702"}
+MFB-P1
+{"qr_box":"12975402001"}
+MFB-P2 (Izquierda)
+{"qr_box":"12975407316"}
+MFB-P2 Derecha
+{"qr_box":"12975407216"}
+MFB-S
+{"qr_box":"12235403215"}
+MFB-E
+{"qr_box":"12975403015"}
+Etiqueta Terminal MFB-P2:
+{"qr_box":"15/10/21 12:36:38 IZQUIERDA"}
+{"qr_box":"15/10/21 12:36:38 DERECHA"}
+
+++++ Llave ++++
+***Topico***:
+PLC/1/status
+***Mensajes***:
+{"key":true}
+
+++++ Clampear Caja ++++
+***Topico***:
+PLC/1/status
+***Mensajes***:
+{"clamp_PDC-R": true}
+{"clamp_PDC-D": true}
+{"clamp_PDC-P": true}
+{"clamp_PDC-S": true}
+{"clamp_TBLU": true}
+{"clamp_MFB-P1": true}
+{"clamp_MFB-S": true}
+{"clamp_MFB-E": true}
+{"clamp_MFB-P2": true}
+{"clamp_BATTERY": true}
+{"clamp_BATTERY-2": true}
+
+++++ Activar Herramienta ++++
+***Topico***:
+PLC/1/status
+***Mensajes***:
+{"encoder": 3,"name": "{\"PDC-R\":\"E1\"}","value":true}
+{"encoder": 1,"name": "{\"PDC-P\":\"E1\"}","value":true}
+
+{"encoder": 2,"name": "{\"MFB-E\":\"E1\"}","value":true}
+++++ Torque OK ++++
+***Topico***:
+TorqueModbus/2/status Herramienta 1 (6mm,Izq)
+TorqueModbus/3/status Herramienta 3 (6mm,Der)
+TorqueModbus/4/status Herramienta 2 (8mm,Centro)
+***Mensajes***:
+OK:
+{"result": 1, "angle":25.9735, "torque": 8.12345, "torque_min": "3", "torque_max": "5", "angle_min":"1000", "angle_max": "3000"}
+
+NOK:
+{"result": 2, "angle":25.9735, "torque": 8.12345, "torque_min": "3", "torque_max": "5", "angle_min":"1000", "angle_max": "3000"}
+
+
+PALPADOR:
+
+{"encoder": 2,"name": "{\"PDC-R\":\"s1\"}","value":true}
+{"encoder": 4,"name": "{\"PDC-R\":\"s1\"}","value":true}
+{"PALPADOR":true}
+
+OK:
+{"result": 1, 
+ "angle":25.9735, 
+ "torque": 8.12345, 
+ "torque_min": "3", 
+ "torque_max": "5", 
+ "angle_min":"1000", 
+ "angle_max": "3000"}
+HM:
+ILX29620221003303 HMDEMO EL.
+
+
+
+**Ejemplo MFB-P2**
+TorqueModbus/4/status
+{"encoder": 3,"name": "{\"MFB-P2\":\"A21\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-P2\":\"A22\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-P2\":\"A23\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-P2\":\"A24\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-P2\":\"A27\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-P2\":\"A28\"}","value":true}
+
+{"encoder": 3,"name": "{\"MFB-P2\":\"A20\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-P2\":\"A25\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-P2\":\"A30\"}","value":true}
+
+{"encoder": 2,"name": "{\"MFB-S\":\"A53\"}","value":true}
+{"encoder": 2,"name": "{\"MFB-S\":\"A54\"}","value":true}
+{"encoder": 2,"name": "{\"MFB-S\":\"A55\"}","value":true}
+{"encoder": 2,"name": "{\"MFB-S\":\"A56\"}","value":true}
+
+{"encoder": 3,"name": "{\"MFB-S\":\"A51\"}","value":true}
+{"encoder": 3,"name": "{\"MFB-S\":\"A52\"}","value":true}
+
+{"encoder": 1,"name": "{\"BATTERY\":\"BT\"}","value":true}
+{"encoder": 1,"name": "{\"PDC-P\":\"E1\"}","value":true}
+{"encoder": 1,"name": "{\"PDC-D\":\"E1\"}","value":true}
+
+ILX29620221001112 HMDEMO EL.
+
+PLC/1/status
+{"start":true}
+{"key":true}
+{"clamp_PDC-R":true,"clamp_PDC-P":true,"clamp_PDC-D":true,"clamp_TBLU":true}
+{"start":true}
+
+RobotEpson/3/status
+{"response":"READY"}
+{"response":"LOADED"}
+{"response":"INSERTED"}
+

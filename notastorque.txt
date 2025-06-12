@@ -1,0 +1,649 @@
+﻿nido mfb-e
+
+encoder 2    herramienta 3
+encoder 4    herramienta 1
+
+encoder 1 tool 6mm lado izquierdo
+encoder 2 tool 6mm lado derecho
+encoder 3 tool 8mm centro
+
+PLC/1/status
+
+{"encoder": 1,
+"name": "{\"PDC-P\":\"E1\"}",
+"value": true}
+
+{"encoder": 3,
+"name": "{\"PDC-R\":\"E1\"}",
+"value": true}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A29\"}",
+"value": true}
+
+#MOTOR EVTA-MBM                          tool2: TorqueModbus/6/status  tool3: TorqueModbus/7/status
+{"encoder": 2,
+"name": "{\"PDC-E\":\"E1\"}",
+"value": true}
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"E1\"}",
+"value": false}
+
+{"encoder": 3,
+"name": "{\"MFB-E\":\"A25\"}",
+"value": true}
+
+{"encoder": 3,
+"name": "{\"G11\":\"G11\"}",
+"value": true}
+
+{"encoder": 2,
+"name": "{\"MFB-E\":\"A21\"}",
+"value": true}
+
+{"encoder": 2,
+"name": "{\"MFB-E\":\"A24\"}",
+"value": true}
+
+{"encoder": 2,
+"name": "{\"MFB-E\":\"A28\"}",
+"value": true}
+
+{"encoder": 2,
+"name": "{\"MFB-E\":\"A21\"}",
+"value": true}
+
+MOTOR.RAUM X294 PRO 3 HMTESTMODODOBLE02 ERX29420231014050
+12239069202TESTBOXPDCE
+12975407416TESTBOXMFBE
+
+
+122390604021935200157202002013000000129754030152111200144101001E11127010129754030152111200144101001E11127010129754030152111200144101001E11127010
+Q1CNCNQ1CNQ1129754030152111200144101001E11127010129754030152111200144101001E11127010129754030152111200144101001E11127010
+
+
+A 296 540 07 09 EL. LTG.SATZ LL RBA ZGSÑ 004 X296 PRO3 HMTEST0002 ERX29420241006666 6309009 FET 1 12-07-22 08Ñ23Ñ40
+A 296 540 07 09 EL. LTG.SATZ LL RBA ZGSÑ 004 X296 PRO3 HM0212 ILX29620221006751 6309009 FET 1 12-07-22 08Ñ23Ñ40
+A 296 540 07 09 EL. LTG.SATZ LL RBA ZGSÑ 004 X296 PRO3 HM000000000003 ILXTEST 6309009 FET 1 12-07-22 08Ñ23Ñ40
+129754030152111200144101001E11127010
+129754030152111200144101001E11127010
+
+{"clamp_PDC-P":true}
+{"clamp_PDC-P2":true}
+{"clamp_PDC-E":true}
+{"clamp_MFB-E":true}
+{"clamp_G11":true}
+
+A 296 540 07 09 EL. LTG.SATZ LL RBA ZGS: 005 X296 AJ23 HM0000001TEST ILX29620231014802 6473546 FET 1 07/05/23 16:54:33
+
+IRX29420221004113 HMTEST1 EL. 
+root_amtc_001
+
+TorqueModbus/4/status
+
+TORQUE OK
+{"angle": 71.9000244140625,
+"angle_max": 2700,
+"angle_min": 2600,
+"angle_target": 0,
+"angle_trend": 1,
+"result": 1,
+"torque": 8.10108000040054321,
+"torque_max": 3.9000000953674316,
+"torque_min": 0.4000000059604645,
+"torque_target": 0,
+"torque_trend": 1}
+
+{"angle": 21.9000244140625,
+"angle_max": 2700,
+"angle_min": 2600,
+"angle_target": 0,
+"angle_trend": 1,
+"result": 1,
+"torque": 16.20108030040554321,
+"torque_max": 3.9000000953674316,
+"torque_min": 0.4000000059604645,
+"torque_target": 0,
+"torque_trend": 1}
+
+
+PDC-RMID
+{"angle": 29.3000114440918,
+"angle_max": 60,
+"angle_min": 10,
+"angle_target": 0,
+"angle_trend": 1,
+"result": 1,
+"torque": 16.190940856933594,
+"torque_max": 17.600000381469727,
+"torque_min": 14.399999618530273,
+"torque_target": 16,
+"torque_trend": 1}
+
+
+TORQUE NOK
+{"angle": 21.9000244140625,
+"angle_max": 2700,
+"angle_min": 2600,
+"angle_target": 0,
+"angle_trend": 1,
+"result": 2,
+"torque": 22.709809840554321,
+"torque_max": 3.9000000953674316,
+"torque_min": 0.4000000059604645,
+"torque_target": 0,
+"torque_trend": 1}
+
+
+IRREGULAR:
+{"angle": 66.20000457763672, "angle_max": 2900.0, "angle_min": 2500.0, "result": 2.0, "torque": 2.014219284057617, "torque_max": 1.5, "torque_min": 0.10000000149011612}
+
+_______________________________________________________
+
+A 294 540 03 09 SATZ LL MOTOR.RAUM ZGS: 007 X296 AJ23.1 PRO3 HMTEST ELX296243A1017979 6533221 FET 1 06/09/23 12:09:24
+
+PLC/1/status
+{"clampv_PDC-E":true}
+{"start":true}
+
+RobotUniversal/2  {"command": "stop"}
+
+RobotUniversal/2/status  {"response": "ready_robot"}
+
+RobotUniversal/2/status  {"response": "position_reached"}
+
+Camera/4  {"trigger": "E_P1", "path": "C:/images/LASTINSPECTION.jpg"}
+
+OK
+Camera/4/status  {
+    "F100": "natural",
+    "F101": "natural",
+    "F102": "azul",
+    "F103": "vacio",
+    "F104": "rojo",
+    "F105": "azul",
+    "F106": "vacio",
+    "F107": "amarillo",
+    "F108": "verde",
+    "F118": "vacio",
+    "F119": "vacio",
+    "F120": "rojo",
+    "F121": "vacio",
+    "F122": "rojo",
+    "F123": "cafe",
+    "RELN": "1010733",
+    "RELR": "vacio"
+}
+
+NOK
+{
+    "F100": "natural",
+    "F101": "natural",
+    "F102": "azul",
+    "F103": "vacio",
+    "F104": "verde",
+    "F105": "azul",
+    "F106": "vacio",
+    "F107": "amarillo",
+    "F108": "verde",
+    "F118": "verde",
+    "F119": "vacio",
+    "F120": "rojo",
+    "F121": "vacio",
+    "F122": "rojo",
+    "F123": "cafe",
+    "RELN": "1010733",
+    "RELR": "vacio"
+}
+
+
+
+Camera/4  {"trigger": "E_P2", "path": "C:/images/LASTINSPECTION.jpg"}
+Camera/4/status  {
+    "F109": "vacio",
+    "F110": "cafe",
+    "F111": "verde",
+    "F112": "vacio",
+    "F113": "amarillo",
+    "F114": "verde",
+    "F115": "vacio",
+    "F116": "vacio",
+    "F117": "verde",
+    "F124": "vacio",
+    "F127": "beige",
+    "F128": "beige",
+    "F129": "beige",
+    "F139": "cafe",
+    "F140": "vacio",
+    "F141": "vacio",
+    "F142": "vacio"
+}
+
+
+
+
+A 294 540 03 09 SATZ LL MOTOR.RAUM ZGS: 007 X296 AJ23.1 PRO3 HMTEST2 ELX294241B1013398 6533221 FET 1 06/09/23 12:09:24
+
+NORMAL:
+ELX296243A1017979
+AMG:
+ELX294241B1013398
+
+QR BOX? 122390692022310200357601002053011122
+QR MFBE ???
+
+PLC/1/status
+
+{"clamp_PDC-E":true}
+{"clamp_G11":true}
+{"clamp_G11":true}
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"E1\"}",
+"value": true}
+
+
+TorqueModbus/6/status
+{
+    "angle": 28.399999618530273,
+    "angle_max": 65,
+    "angle_min": 10,
+    "angle_target": 0,
+    "angle_trend": 3,
+    "result": 1,
+    "torque": 8.04335880279541,
+    "torque_max": 8.800000190734863,
+    "torque_min": 7.199999809265137,
+    "torque_target": 8,
+    "torque_trend": 3
+}
+
+NOK
+{
+    "angle": 28.399999618530273,
+    "angle_max": 65,
+    "angle_min": 10,
+    "angle_target": 0,
+    "angle_trend": 3,
+    "result": 2,
+    "torque": 5.04335880279541,
+    "torque_max": 5.800000190734863,
+    "torque_min": 3.199999809265137,
+    "torque_target": 8,
+    "torque_trend": 3
+}
+
+
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s3\"}",
+"value": true}
+
+
+{"encoder": 4,
+"name": "{\"PDC-E\":\"height\"}",
+"value": true}
+
+
+{"PALPADOR":true}
+
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s2\"}",
+"value": true}
+
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s1\"}",
+"value": true}
+
+
+
+{"encoder": 3,
+"name": "{\"MFB-E\":\"A25\"}",
+"value": true}
+
+
+TorqueModbus/7/status
+{
+    "angle": 41.20000076293945,
+    "angle_max": 75,
+    "angle_min": 10,
+    "angle_target": 0,
+    "angle_trend": 3,
+    "result": 1,
+    "torque": 16.288320541381836,
+    "torque_max": 17.600000381469727,
+    "torque_min": 14.399999618530273,
+    "torque_target": 16,
+    "torque_trend": 3
+}
+
+
+{"encoder": 3,
+"name": "{\"G11\":\"G11\"}",
+"value": true}
+
+
+A 296 540 04 09 SATZ RL MOTOR.RAUM ZGS: 007 X296 AJ23.1 PRO 3 HM000000000003 ELX294243A1016043 6502952 FET 1 16/08/23 07:33:02
+122390692022232000454601002053055222
+
+
+
+
+
+
+VISION1 test para bug
+
+A 296 540 07 09 EL. LTG.SATZ LL RBA ZGS: 005 X296 AJ23/1PRO3 HMDEMO ILX296243A1018560 6538125 FET 2 09/13/23 10:21:10
+A 296 540 07 09 EL. LTG.SATZ LL RBA ZGS: 005 X296 AJ23/1PRO3 HMDEMO ILZ296253A1018110 6538125 FET 2 09/13/23 10:21:10
+
+PLC/1/status
+Camera/4/status
+RobotEpson/2/status
+LaserSensor/3/status
+
+{"retry_btn":true}
+
+{"clamp_TBLU":true}
+{"start":true}
+
+{"response":"program_initiated"}
+{"response":"position_reached"}
+
+{"1":"rojo","2":"beige","3":"rojo","4":"rojo"}
+
+{"1":true,"2":true,"3":true,"4":true}
+
+
+
+{"response":"home_reached"}
+
+
+
+
+
+----------------------------------------------------------------------------------
+
+TEST TORQUE MOTOR
+
+
+
+
+
+
+
+A 294 540 76 06 SATZ LL MOTOR.RAUM ZGS: 008 X294 AJ23.1 PRO3 HM0000PRUEBA008 ELX294243A1017702 6559593 FET 2 20/03/24 23:09:56
+122390692022322001967601002053000000 (PDC-E REPETIDA)
+129754074162327500802401001020000000 (MFB-E REPETIDA)
+
+12239069202PRUEBA008 (PDC-E TEST)
+12975407416PRUEBA008 (MFB-E TEST)
+
+PLC/1/status
+{"clamp_PDC-E":true}
+{"clamp_MFB-E":true}
+{"clamp_G11":true}
+
+PLC/1/status
+
+{"encoder": 4,
+"name": "{\"MFB-E\":\"ALTURA\"}",
+"value": false}
+{"encoder": 4,
+"name": "{\"MFB-E\":\"ALTURA\"}",
+"value": true}
+
+
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"E1\"}",
+"value": true}
+
+PLC/1/status
+{"encoder": 2,
+"name": "{\"MFB-E\":\"A21\"}",
+"value": true}
+
+{"inductivo_MFB-E_A21": true}
+
+{"encoder": 2,
+"name": "{\"MFB-E\":\"A24\"}",
+"value": true}
+{"encoder": 2,
+"name": "{\"MFB-E\":\"A28\"}",
+"value": true}
+
+PLC/1/status
+{"encoder": 3,
+"name": "{\"MFB-E\":\"A25\"}",
+"value": false}
+{"encoder": 3,
+"name": "{\"MFB-E\":\"A25\"}",
+"value": true}
+{"encoder": 3,
+"name": "{\"G11\":\"G11\"}",
+"value": false}
+{"encoder": 3,
+"name": "{\"G11\":\"G11\"}",
+"value": true}
+
+
+PLC/1/status
+
+{"PALPADOR":true}
+
+{"encoder": 4,
+"name": "{\"PDC-E\":\"height\"}",
+"value": true}
+{"encoder": 4,
+"name": "{\"PDC-E\":\"height\"}",
+"value": false}
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s8\"}",
+"value": true}
+
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s5\"}",
+"value": true}
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s3\"}",
+"value": true}
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s2\"}",
+"value": true}
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s1\"}",
+"value": true}
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s4\"}",
+"value": true}
+{"encoder": 2,
+"name": "{\"PDC-E\":\"s6\"}",
+"value": true}
+
+
+TorqueModbus/6/status
+{"angle": 71.9000244140625,
+"angle_max": 2700,
+"angle_min": 2600,
+"angle_target": 0,
+"angle_trend": 1,
+"result": 1,
+"torque_max": 3.9000000953674316,
+"torque_min": 0.4000000059604645,
+"torque_target": 0,
+"torque_trend": 1,
+"torque": 8.10108000040054321}
+
+
+TorqueModbus/7/status
+{"angle": 21.9000244140625,
+"angle_max": 2700,
+"angle_min": 2600,
+"angle_target": 0,
+"angle_trend": 1,
+"result": 1,
+"torque_max": 3.9000000953674316,
+"torque_min": 0.4000000059604645,
+"torque_target": 0,
+"torque_trend": 1,
+"torque": 16.20108030040554321}
+
+
+
+{"AngularThreshold": 0.10000000149011612, "CurrentMonitor": 0, "CycleSelected": 9, "FinalSpeed": 6, "PostSeatingRealTorque": 0, "PostSeatingTorque": 0, "RundownSpeed": 0, "SeatingTorque": 0, "SetErrorcode": 16448, "ToolCount": 30496, "TorqueCorrection": 1, "angle": 711.4000244140625, "angle_max": 2900, "angle_min": 2400, "angle_target": 2800, "angle_trend": "Angle below", "fase": 4, "result": 2, "torque": 0, "torque_max": 3.5, "torque_min": 0.10000000149011612, "torque_target": 0, "torque_trend": "Torque below"}
+
+{"AngularThreshold": 0, "CurrentMonitor": 0, "CycleSelected": 1, "FinalSpeed": 258, "PostSeatingRealTorque": 0, "PostSeatingTorque": 0, "RundownSpeed": 0, "SeatingTorque": 0, "SetErrorcode": 16448, "ToolCount": 30501, "TorqueCorrection": 1, "angle": 2969.900146484375, "angle_max": 5000, "angle_min": 0, "angle_target": 0, "angle_trend": "Angle OK", "fase": 1, "result": 2, "torque": 6.549717426300049, "torque_max": 12, "torque_min": 1, "torque_target": 10, "torque_trend": "Torque OK"}
+
+
+
+
+
+TorqueModbus/4/status  {
+    "signal_start_button": false
+}
+
+TorqueModbus/4/status  {
+    "bin2": false
+}
+
+TorqueModbus/4/status  {
+    "bin3": false
+}
+
+TorqueModbus/4/status  {
+    "bin4": false
+}
+
+
+_______________________________________________________________________
+
+
+Vsupervision/status
+{"vision":"start_record"}
+{"vision":"stop_record"}
+{"info":"nombre_de_archivo_diferente"}
+{"info":"terefieresamagalychavez"}
+{"save":true}
+
+A 294 540 91 00 EL. LTG.SATZ LL RBA ZGS\u00d1 011 X294 AJ23-2PRO3 HM000000TEST102 ILX294243B1021056 6697049
+
+PLC/1/status
+{"clamp_MFB-P2":true}
+
+{"inductivo_MFB-P2_A29":true}
+{"inductivo_MFB-P2_A29":false}
+
+{"inductivo_MFB-P2_A26":true}
+{"inductivo_MFB-P2_A26":false}
+
+{"inductivo_MFB-P2_A24":true}
+{"inductivo_MFB-P2_A24":false}
+
+{"inductivo_MFB-P2_A21":true}
+{"inductivo_MFB-P2_A21":false}
+
+{"MFBP2_candado_limit":true}
+{"MFBP2_candado_limit":false}
+
+{"encoder": 4,
+"name": "{\"MFB-P2\":\"ALTURA\"}",
+"value": true}
+
+{"encoder": 4,
+"name": "{\"MFB-E\":\"height\"}",
+"value": true}
+
+
+{"TOOL1_ALTURA":true}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A29\"}",
+"value": true}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A29\"}",
+"value": false}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A26\"}",
+"value": true}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A26\"}",
+"value": false}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A24\"}",
+"value": true}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A24\"}",
+"value": false}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A22\"}",
+"value": true}
+
+{"encoder": 1,
+"name": "{\"MFB-P2\":\"A22\"}",
+"value": false}
+
+
+TorqueModbus/2/status
+
+{"AngularThreshold": 0, 
+"CurrentMonitor": 0, 
+"CycleSelected": 9, 
+"FinalSpeed": 258, 
+"PostSeatingRealTorque": 0, 
+"PostSeatingTorque": 0, 
+"RundownSpeed": 0, 
+"SeatingTorque": 0, 
+"SetErrorcode": 16448, 
+"ToolCount": 30501, 
+"TorqueCorrection": 1, 
+"angle": 40.0, 
+"angle_max": 100, 
+"angle_min": 0, 
+"angle_target": 50, 
+"angle_trend": "Angle OK", 
+"fase": 4, 
+"result": 17, 
+"torque": 8.5, 
+"torque_max": 10, 
+"torque_min": 6.5, 
+"torque_target": 8.5, 
+"torque_trend": "Torque OK"}
+
+POSICIÓN TOOL1 para ALTURA OK:
+{"TOOL1_ALTURA":true}
+
+POSICIÓN TOOL2 para ALTURA OK:
+{"TOOL2_ALTURA":true}
+
+POSICIÓN TOOL3 para ALTURA OK:
+{"encoder": 4,
+"name": "{\"MFB-P1\":\"ALTURA\"}",
+"value": true}
+
+
+
+
+{"encoder": 2, "name": "{"BATTERY-3":"BT"}", "value": True}
+{"encoder": 2,
+"name": "{\"BATTERY-3\":\"BT\"}",
+"value": true}
+
+TorqueModbus/3/status  
+{"AngularThreshold": 0, "CurrentMonitor": 0, "CycleSelected": 0, "FinalSpeed": 258, "PostSeatingRealTorque": 0, "PostSeatingTorque": 0, "RundownSpeed": 0, "SeatingTorque": 0, "SetErrorcode": 16448, "ToolCount": 40634, "TorqueCorrection": 1, "angle": 6088.30029296875, "angle_max": 5000, "angle_min": 0, "angle_target": 0, "angle_trend": "Angle over", "fase": 1, "result": 1, "torque": 6.8333001136779785, "torque_max": 12, "torque_min": 1, "torque_target": 10, "torque_trend": "Torque OK"}
+{"BATT3_COVER": true}
+
+{"clamp_BATTERY-3": true}
+
+
+
+
